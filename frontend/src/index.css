@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+@font-face {
+  font-family: 'KoPub';
+  src: url('/data/KoPubWorld Batang Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@keyframes chatAppear {
+  0% {
+    transform: translateY(14px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.animate-chatAppear {
+  animation: chatAppear 0.65s ease-out forwards;
+}

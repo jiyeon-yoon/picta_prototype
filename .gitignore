@@ -1,0 +1,25 @@
+# 데이터베이스 (용량 큼)
+*.db
+data/*.db
+
+# Python 캐시
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+dist/
+
+# 환경변수 (비밀키)
+.env
+
+# Mac 시스템 파일
+.DS_Store
+
+# 큰 미디어 파일
+*.heic
+*.HEIC
+*.mov
+*.mp4

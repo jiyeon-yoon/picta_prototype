@@ -1,0 +1,23 @@
+# FastAPI
+fastapi>=0.104.0
+uvicorn>=0.24.0
+python-multipart>=0.0.6
+
+# 기존 Picta 의존성
+torch>=2.0.0
+transformers>=4.30.0
+numpy>=1.24.0
+pillow>=10.0.0
+pillow-heif>=0.13.0
+facenet-pytorch>=2.5.0
+opencv-python>=4.8.0
+faiss-cpu>=1.7.4
+anthropic>=0.18.0
+openai>=1.0.0
+osxphotos>=0.67.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Google Drive (선택)
+google-api-python-client>=2.100.0
+google-auth-oauthlib>=1.1.0
