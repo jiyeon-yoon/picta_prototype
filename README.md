@@ -5,8 +5,8 @@
 ## 📦 포함된 파일
 
 ```
-picta_final/
-├── agent/                   # LangChain 대화형 Agent (신규)
+picta/
+├── agent/                   # LangChain 대화형 Agent
 │   ├── __init__.py
 │   ├── photo_agent.py
 │   ├── tools.py
@@ -29,7 +29,6 @@ picta_final/
 
 자세한 설정 방법은 **[SETUP.md](./SETUP.md)** 파일을 참고하세요.
 
-### 빠른 요약:
 1. **Anthropic API Key** (선택): 대화형 검색 기능용
    - 환경 변수: `ANTHROPIC_API_KEY` 또는 `backend/.env` 파일
 2. **Google Drive 인증** (선택): Google Drive 사용 시
@@ -68,27 +67,7 @@ pip install langchain langchain-anthropic langchain-core
 
 > LangChain 없어도 기본 기능은 동작합니다!
 
-## 📁 최종 프로젝트 구조
-
-```
-picta_prototype_5/
-├── core/                    ← 기존 유지
-├── agent/                   ← 새로 추가
-├── visual_search/           ← 새로 추가
-├── backend/
-│   ├── api.py               ← 교체됨
-│   └── .env
-├── frontend/
-│   └── src/
-│       ├── pages/
-│       │   ├── Home.jsx     ← 팀원꺼 유지
-│       │   └── Search.jsx   ← 교체됨
-│       └── components/      ← 기존 유지
-├── data/                    ← 기존 유지
-└── main.py                  ← 기존 유지
-```
-
-## ✨ 새 기능
+## 추가 기능
 
 | 기능 | 설명 | 필요 모듈 |
 |------|------|----------|
@@ -100,13 +79,13 @@ picta_prototype_5/
 
 ## 🔌 API 엔드포인트
 
-| 엔드포인트 | 설명 | 신규 |
-|-----------|------|------|
-| `POST /search` | 기존 검색 | |
-| `POST /chat` | 대화형 검색 | ✅ |
-| `POST /similar` | 유사 사진 검색 | ✅ |
-| `GET /recommendations/{id}` | 사진 추천 | ✅ |
-| `POST /similar/upload` | 이미지 업로드 검색 | ✅ |
+| 엔드포인트 | 설명 |
+|-----------|------|
+| `POST /search` | 기존 검색 |
+| `POST /chat` | 대화형 검색 |
+| `POST /similar` | 유사 사진 검색 |
+| `GET /recommendations/{id}` | 사진 추천 |
+| `POST /similar/upload` | 이미지 업로드 검색 |
 
 ## 🎨 UI 레이아웃
 
